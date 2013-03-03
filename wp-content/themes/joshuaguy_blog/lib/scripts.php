@@ -16,14 +16,19 @@
  */
 
 function moshun_scripts() {
+  if (!is_child_theme) {
   wp_enqueue_style('roots_bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', false, null);
   wp_enqueue_style('roots_bootstrap_responsive', get_template_directory_uri() . '/assets/css/bootstrap-responsive.css', array('roots_bootstrap'), null);
   wp_enqueue_style('roots_app', get_template_directory_uri() . '/assets/css/app.css', false, null);
+  }
 
   if (is_child_theme()) {
     // ##
     //    grab child theme specific css
     // ##
+    wp_enqueue_style('roots_bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.css', false, null);
+    wp_enqueue_style('roots_bootstrap_responsive', get_stylesheet_directory_uri() . '/assets/css/bootstrap-responsive.css', array('roots_bootstrap'), null);
+    wp_enqueue_style('roots_app', get_stylesheet_directory_uri() . '/assets/css/app.css', false, null);
     wp_enqueue_style('roots_child', get_stylesheet_uri(), false, null);
     // add some web fonts here if you'd like
     wp_enqueue_style('gfont_monoton', 'http://fonts.googleapis.com/css?family=Monoton', false, null);
