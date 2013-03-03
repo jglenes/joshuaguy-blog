@@ -8,16 +8,13 @@ Template:         roots
 Version:        	1.0.0
 */
 
+/* Roots Child Theme Styles */
+
+/*
 article {
   margin: 0 0 20px;
   padding: 0 0 15px;
   border-bottom: 1px solid #eee;
-}
-
-.page-header {
-  padding: 0;
-  margin: 0;
-  border: none;
 }
 
 .entry-container .post-meta {
@@ -55,6 +52,7 @@ article {
 .label-tag a:hover {
   text-decoration: none;
 }
+*/
 
 /* =============================================================================
    Base
