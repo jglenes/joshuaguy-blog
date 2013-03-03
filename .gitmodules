@@ -4,3 +4,6 @@
 [submodule "wp-content/themes/roots"]
 	path = wp-content/themes/roots
 	url = git://github.com/retlehs/roots.git
+[submodule "wp-content/themes/joshuaguy_blog/assets/less/bootswatch"]
+	path = wp-content/themes/joshuaguy_blog/assets/less/bootswatch
+	url = git://github.com/thomaspark/bootswatch.git
