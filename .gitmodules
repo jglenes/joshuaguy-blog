@@ -7,3 +7,6 @@
 [submodule "wp-content/themes/joshuaguy_blog/assets/less/bootswatch"]
 	path = wp-content/themes/joshuaguy_blog/assets/less/bootswatch
 	url = git://github.com/thomaspark/bootswatch.git
+[submodule "wp-content/themes/joshuaguy_blog/lib/Font-Awesome"]
+	path = wp-content/themes/joshuaguy_blog/lib/Font-Awesome
+	url = git://github.com/FortAwesome/Font-Awesome.git
