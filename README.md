@@ -1,5 +1,5 @@
-You can use this as a start point for managing a WordPress install with git.
+# joshuaguy.me Blog
 
-In it's current state, all you need to do is clone this repo, `git submodule update --init` then copy `wp-config-sample.php` to `wp-config.php`, update your database settings, and your default theme.
+This is my personal blog, powered by wordpress as a git submodule.  The purpose was to learn how to manage an entire website and its dependencies with git, and also to create a functional blog for personal, professional, and academic use.
 
-See '[Install and manage WordPress with Git](http://davidwinter.me/articles/2012/04/09/install-and-manage-wordpress-with-git/)' for more details.
+
