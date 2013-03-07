@@ -14,7 +14,9 @@
 // @import "bootswatch/@{bootswatch-theme-name}/bootswatch.less";
 
 // Core variables and mixins
-@import "bootswatch/readable/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "variables.less"; // Original variables
+@import "bootswatch/readable/variables.less"; // Bootswatch variables
+@import "custom-variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "mixins.less";
 
 // CSS Reset
@@ -64,9 +66,11 @@
 @import "carousel.less";
 @import "hero-unit.less";
 
-// Custom class
-@import "bootswatch/readable/bootswatch.less";
-@import "custom.less";
+// Bootswatch class
+@import "bootswatch/readable/bootswatch.less"; 
 
 // Utility classes
 @import "utilities.less"; // Has to be last to override when necessary
+
+// Custom Classes
+@import "custom.less";
