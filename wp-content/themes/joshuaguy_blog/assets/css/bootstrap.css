@@ -6314,3 +6314,12 @@ ul.icons li [class*=" icon-"] {
 .icon-folder-open-alt:before {
   content: "\f115";
 }
+.sidebar-portrait {
+  text-align: center;
+}
+.sidebar-portrait img {
+  max-width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: 10px solid lightgrey;
+}

@@ -6,3 +6,15 @@ Custom Less and other Style Libraries
 
 // Font-Awesome
 @import "../../lib/Font-Awesome/less/font-awesome.less";
+@portrait-width: 150px;
+
+.sidebar-portrait {
+    text-align: center;
+}
+
+.sidebar-portrait img {
+    max-width: @portrait-width;
+    height: @portrait-width;
+    border-radius: @portrait-width;
+    border: 10px solid lightgrey;
+}
