@@ -5275,6 +5275,7 @@ div.subnav-fixed {
 Custom Less and other Style Libraries
 
 */
+/* ---------- Style Libraries ---------- */
 /*!
  *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
@@ -6313,6 +6314,13 @@ ul.icons li [class*=" icon-"] {
 }
 .icon-folder-open-alt:before {
   content: "\f115";
+}
+/* ---------- Custom Site Styles ---------- */
+@media (min-width: 768px) {
+  .sidebar-fixed {
+    position: static;
+    margin-top: 150px;
+  }
 }
 .sidebar-portrait {
   text-align: center;
