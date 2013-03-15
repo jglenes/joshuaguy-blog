@@ -10,23 +10,198 @@ Custom Less and other Style Libraries
 @import "../../lib/Font-Awesome/less/font-awesome.less";
 
 /* ---------- Custom Site Styles ---------- */
-@media (min-width: 768px) {
-    .sidebar-fixed {
-        position:static;
-        margin-top: 150px;
 
+/* Lists */
+
+.invisible-list {
+    margin: 0;
+    padding: 0;
+    > li {
+        margin: 0;
+        list-style: none;
     }
 }
 
-@portrait-width: 150px;
-
-.sidebar-portrait {
-    text-align: center;
+.horizontal-list {
+    .invisible-list;
+    > li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    >li:last-child {
+        margin-right: 0
+    }
 }
 
-.sidebar-portrait img {
-    max-width: @portrait-width;
+@media (min-width: 768px) {
+    .sidebar-fixed {
+        position:fixed;
+        top: 40%;
+        min-width: 300px;
+    }
+}
+
+@portrait-width: 120px;
+
+.sidebar-name, .sidebar-portrait, .sidebar-social-bar {
+    text-align: center
+}
+
+.sidebar-portrait {
+    border: 10px solid darken(@grayLighter,10%);
+    width: @portrait-width;
     height: @portrait-width;
-    border-radius: @portrait-width;
-    border: 10px solid lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+
+    -webkit-border-radius: @portrait-width;
+       -moz-border-radius: @portrait-width;
+            border-radius: @portrait-width;
+    img {
+        width: @portrait-width;
+        height: @portrait-width;
+
+        -webkit-border-radius: @portrait-width;
+           -moz-border-radius: @portrait-width;
+                border-radius: @portrait-width;
+    }
+}
+
+.sidebar-name {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.sidebar-social-bar {
+    .horizontal-list;
+}
+
+/* Article Styles (both list and single) */
+
+.article {
+    box-sizing: content-box;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    max-width: 75%;
+    :after {
+        content: "";
+        display: table;
+        clear: both
+    }
+    .article-date {
+        display: block;
+        font-size: 1rem;
+        font-weight: 300;
+        color: @grayLight;
+    }
+}
+
+@media (min-width: 481px) {
+    .article {
+        padding-right: 60px;
+        padding-left: 60px
+    }
+}
+
+.article-header {
+    :after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .article-title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        line-height: @fontSizeLarge*1.25+20;
+        >a:hover {
+            color:@linkColorHover;
+            text-decoration: none;
+        }
+    }
+    .article-byline {
+        display: none;
+    }
+}
+
+.article-body {
+    margin-top: 1.3rem;
+}
+
+.article-body blockquote,.article-body figure {
+    margin-top: 2em;
+    margin-bottom: 2em
+}
+
+.article-body blockquote+small,.article-body blockquote+dd,.article-body blockquote+figcaption,.article-body figure+small,.article-body figure+dd,.article-body figure+figcaption {
+    position: relative;
+    top: -3em
+}
+
+@media (min-width: 1220px) {
+    .article-body blockquote,.article-body figure {
+        margin-right: -4.5rem;
+        margin-left: -4.5rem
+    }
+
+    .article-body blockquote+small,.article-body blockquote+dd,.article-body blockquote+figcaption,.article-body figure+small,.article-body figure+dd,.article-body figure+figcaption {
+        margin-right: -4.5rem;
+        margin-left: -4.5rem
+    }
+}
+
+.article-body figure.right,.article-body figure.left {
+    max-width: 40%
+}
+
+.article-body figure.right {
+    float: right;
+    margin-left: 1em
+}
+
+.article-body figure.left {
+    float: left;
+    margin-right: 1em
+}
+
+.article-footer {
+    margin-top: 2.1rem;
+    position: relative;
+    .text-shares {
+        font-size: 0.8rem;
+        color: #a19c91;
+    }
+    .social-shares {
+        margin-top: 0.5rem
+    }
+}
+
+.article-list {
+    .invisible-list;
+    .article {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem
+    }
+    .article-title {
+        margin: 0
+    }
+    >li {
+        position: relative
+    }
+    >li:first-child .article {
+        padding-top: 0
+    }
+    >li:last-child .article {
+        padding-bottom: 0
+    }
+    margin-top: 6rem;
+}
+
+@media (max-width: 480px) {
+    .article-list {
+        padding: 1.3rem;
+        text-align: center
+    }
 }
