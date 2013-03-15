@@ -21,7 +21,7 @@
                     </header>
                     <div class="span9">
                         <!-- Main Content Area -->
-                        <?php get_template_part('templates/blog','posts'); ?>
+                        <?php get_template_part('templates/blog','content'); ?>
                         <?php // include roots_template_path(); ?>
                     </div>
                 </div>

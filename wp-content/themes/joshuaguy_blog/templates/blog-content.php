@@ -7,35 +7,17 @@
 <?php endif; ?>
 
 <?php while (have_posts()) : the_post(); ?>
-  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="entry-container">
-
-      <header>
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-      </header>
-
-      <!-- grab post thumb -->
-      <?php if ( has_post_thumbnail() ) { ?>
-        <div class="row">
-          <div class="span2">
-            <a class="thumbnail" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" alt="<?php the_title_attribute(); ?>">         
-              <?php echo get_the_post_thumbnail($id, 'thumbnail'); ?> 
-            </a>
-          </div>
-          <div class="span6">
-            <div class="entry-content"> 
-              <?php the_excerpt(); ?>
-            </div>
-          </div>
-        </div>
-      <?php } ?>
-      
-      <footer>
-        <?php get_template_part('templates/entry-meta'); ?>
-      </footer>
-    
+<article id="post-<?php the_ID(); ?>" class="article">
+    <header class="article-header">
+        <h3 class="article-title">
+            <a class="article-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        </h3>
+    </header>
+    <time class="article-date"><?php the_date(); ?></time>
+    <div class="article-body">
+        <?php the_content(); ?>
     </div>
-  </article>
+</article>
 <?php endwhile; ?>
 
 <?php if ($wp_query->max_num_pages > 1) : ?>
