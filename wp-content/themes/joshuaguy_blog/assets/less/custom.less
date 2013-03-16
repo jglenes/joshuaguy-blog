@@ -40,6 +40,13 @@ Custom Less and other Style Libraries
 
 @portrait-width: 120px;
 
+.sidebar {
+    a:hover {
+        color: @linkColorHover;
+        text-decoration: none;
+    }
+}
+
 .sidebar-name, .sidebar-portrait, .sidebar-social-bar {
     text-align: center
 }
@@ -125,6 +132,10 @@ Custom Less and other Style Libraries
 
 .article-body {
     margin-top: 1.3rem;
+    a {
+        color: @linkColorHover;
+        text-decoration: underline;
+    }
 }
 
 .article-body blockquote,.article-body figure {
