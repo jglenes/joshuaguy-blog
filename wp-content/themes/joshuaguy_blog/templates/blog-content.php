@@ -17,6 +17,9 @@
     <div class="article-body">
         <?php the_content(); ?>
     </div>
+    <div class="article-comments hidden-phone">
+        <?php comments_template(); ?>
+    </div>
 </article>
 <?php endwhile; ?>
 
