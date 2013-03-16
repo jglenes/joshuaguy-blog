@@ -132,10 +132,15 @@ Custom Less and other Style Libraries
 
 .article-body {
     margin-top: 1.3rem;
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+    }
     a {
         color: @linkColorHover;
         text-decoration: underline;
     }
+    
 }
 
 .article-body blockquote,.article-body figure {
@@ -184,6 +189,12 @@ Custom Less and other Style Libraries
     .social-shares {
         margin-top: 0.5rem
     }
+}
+
+.article-comments {
+    border-top: 1px solid @grayLighter;
+    margin-top: 25px;
+    padding-top: 25px; 
 }
 
 .article-list {
