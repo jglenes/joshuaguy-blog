@@ -31,6 +31,7 @@ function moshun_scripts() {
     // wp_enqueue_style('roots_app', get_stylesheet_directory_uri() . '/assets/css/app.css', false, null);
     // wp_enqueue_style('roots_child', get_stylesheet_uri(), false, null);
     // add some web fonts here if you'd like
+    wp_enqueue_style('highlight.js.css', get_stylesheet_directory_uri() . '/assets/vendor/highlight.js/styles/zenburn.css', false, null);
     wp_enqueue_style('gfont_Lato', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', false, null);
     wp_enqueue_style('gfont_OpenSans', '//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic', false, null);
     wp_enqueue_style('FontAwesome', get_stylesheet_directory_uri() . '/lib/Font-Awesome/css/font-awesome.min.css', false, null);
@@ -59,10 +60,14 @@ function moshun_scripts() {
     // ##
     wp_register_script('child_main', get_stylesheet_directory_uri() . '/assets/js/main.js', false, null, false);
     // register other custom scripts here... 
-    
+    wp_register_script('highlight.js', get_stylesheet_directory_uri() . '/assets/vendor/highlight.js/highlight.pack.js', false, null, false);
+    wp_register_script('highlight.load.js', get_stylesheet_directory_uri() . '/assets/js/highlight.load.js', false, null, false);
     wp_enqueue_script('roots_plugins');
     wp_enqueue_script('child_main');
     // enqueue other custom scripts here...
+
+    wp_enqueue_script('highlight.js');
+    wp_enqueue_script('highlight.load.js');
   }
 }
 
