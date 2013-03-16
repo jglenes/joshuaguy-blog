@@ -10,3 +10,6 @@
 [submodule "wp-content/themes/joshuaguy_blog/lib/Font-Awesome"]
 	path = wp-content/themes/joshuaguy_blog/lib/Font-Awesome
 	url = git://github.com/FortAwesome/Font-Awesome.git
+[submodule "lib/disqus"]
+	path = lib/disqus
+	url = git://github.com/disqus/disqus-wordpress.git
