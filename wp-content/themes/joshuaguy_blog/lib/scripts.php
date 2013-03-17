@@ -62,12 +62,14 @@ function moshun_scripts() {
     // register other custom scripts here... 
     wp_register_script('highlight.js', get_stylesheet_directory_uri() . '/assets/vendor/highlight.js/highlight.pack.js', false, null, false);
     wp_register_script('highlight.load.js', get_stylesheet_directory_uri() . '/assets/js/highlight.load.js', false, null, false);
+    wp_register_script('social.button.load.js', get_stylesheet_directory_uri() . '/assets/js/social.button.load.js', false, null, false);
     wp_enqueue_script('roots_plugins');
     wp_enqueue_script('child_main');
     // enqueue other custom scripts here...
 
     wp_enqueue_script('highlight.js');
     wp_enqueue_script('highlight.load.js');
+    wp_enqueue_script('social.button.load.js');
   }
 }
 

@@ -17,6 +17,9 @@
     <div class="article-body">
         <?php the_content(); ?>
     </div>
+    <div class="article-social-buttons">
+        <?php get_template_part('templates/blog','socialbuttons'); ?>
+    </div>
     <div class="article-comments">
         <?php comments_template(); ?>
     </div>
