@@ -138,6 +138,11 @@ Custom Less and other Style Libraries
     
 }
 
+.article-body blockquote p {
+    font-family: @serifFontFamily;
+    line-height: 1.75;
+}
+
 .article-body blockquote,.article-body figure {
     margin-top: 2em;
     margin-bottom: 2em
@@ -149,12 +154,12 @@ Custom Less and other Style Libraries
 }
 
 @media (min-width: 1220px) {
-    .article-body blockquote,.article-body figure {
+    .article-body figure {
         margin-right: -4.5rem;
         margin-left: -4.5rem
     }
 
-    .article-body blockquote+small,.article-body blockquote+dd,.article-body blockquote+figcaption,.article-body figure+small,.article-body figure+dd,.article-body figure+figcaption {
+    .article-body figure+small,.article-body figure+dd,.article-body figure+figcaption {
         margin-right: -4.5rem;
         margin-left: -4.5rem
     }
