@@ -94,7 +94,14 @@ Custom Less and other Style Libraries
         font-size: 1rem;
         font-weight: 300;
         color: @grayLight;
+        margin-top: 0.75rem;
     }
+    h1 { font-size: @baseFontSize * 1.5; line-height: @baseFontSize * 1.5 * 1.5 } // ~38px
+    h2 { font-size: @baseFontSize * 1.25; line-height: @baseFontSize * 1.25 * 1.5 } // ~32px
+    h3 { font-size: @baseFontSize * 1.15; line-height: @baseFontSize * 1.15 * 1.5 } // ~24px
+    h4 { font-size: @baseFontSize; line-height: @baseFontSize * 1.5 } // ~18px
+    h5 { font-size: @baseFontSize * 0.85; line-height: @baseFontSize * 0.85 * 1.5 }
+    h6 { font-size: @baseFontSize * 0.75; line-height: @baseFontSize * 0.75 * 1.5} // ~12px
 }
 
 @media (min-width: 481px) {
@@ -113,8 +120,11 @@ Custom Less and other Style Libraries
     .article-title {
         margin-top: 0;
         margin-bottom: 0;
-        font-size: 1.5rem;
-        line-height: 2.5rem;
+        // font-size: @baseFontSize * 1.5;
+        // line-height: @baseFontSize * 1.5 * 1.5;
+        a {
+            color: @headingsColor;
+        }
         >a:hover {
             color:@linkColorHover;
             text-decoration: none;
@@ -126,7 +136,7 @@ Custom Less and other Style Libraries
 }
 
 .article-body {
-    margin-top: 1.3rem;
+    margin-top: 1.5rem;
     p {
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
@@ -140,6 +150,7 @@ Custom Less and other Style Libraries
 
 .article-body blockquote p {
     font-family: @serifFontFamily;
+    font-size: @baseFontSize * 1.15;
     line-height: 1.75;
 }
 

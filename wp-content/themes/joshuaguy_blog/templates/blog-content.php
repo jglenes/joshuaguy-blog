@@ -9,9 +9,9 @@
 <?php while (have_posts()) : the_post(); ?>
 <article id="post-<?php the_ID(); ?>" class="article">
     <header class="article-header">
-        <h3 class="article-title">
+        <h1 class="article-title">
             <a class="article-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        </h3>
+        </h1>
     </header>
     <time class="article-date"><?php the_date(); ?></time>
     <div class="article-body">
