@@ -15,9 +15,9 @@ $postsQuery = new WP_Query( $postsQueryArgs );
         <li>
             <article class="article">
                 <header class="article-header">
-                    <h3 class="article-title">
+                    <h2 class="article-title">
                         <a class="article-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </h3>
+                    </h2>
                 </header>
                 <time class="article-date"><?php the_date(); ?></time>
             </article>
