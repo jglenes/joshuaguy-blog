@@ -9,6 +9,9 @@
             <div class="container-fluid">
                 <div class="row-fluid">
                     <div class="span9 offset3">
+                        <div class="mobile-header visible-phone">
+                            <?php get_template_part('templates/mobileheader'); ?>
+                        </div>
                         <?php get_template_part('templates/navheader'); ?>
                     </div> <!-- /.span9 offset3 -->
                 </div> <!-- /.row-fluid -->
