@@ -12,6 +12,7 @@
         <h1 class="article-title">
             <a class="article-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </h1>
+        <h2 class="article-byline">By <?php echo the_author_meta('display_name'); ?></h2>
     </header>
     <time class="article-date"><?php the_date(); ?></time>
     <div class="article-body">
