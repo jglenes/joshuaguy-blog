@@ -40,7 +40,7 @@ Custom Less and other Style Libraries
     background-color: @white;
     border-bottom: 1px solid @grayLighter;
     > ul {
-        li {
+        li.portrait {
             img {
                 width: 70px;
                 height: 70px;
@@ -52,6 +52,13 @@ Custom Less and other Style Libraries
             font-size: .9rem;
             letter-spacing: .1rem;
             text-transform: uppercase;
+            a {
+                color: @linkColor;
+            }
+            a:hover {
+                color: @linkColorHover;
+                text-decoration: none;
+            }
         }
     }
 }
