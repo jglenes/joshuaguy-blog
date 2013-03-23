@@ -30,6 +30,39 @@ Custom Less and other Style Libraries
     }
 }
 
+/* ---------- Mobile Header ---------- */
+
+.mobile-header {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    margin-bottom: 2rem;
+    padding: 1rem 4.5rem 1rem 4.5rem;
+    background-color: @white;
+    border-bottom: 1px solid @grayLighter;
+    > ul {
+        li.portrait {
+            img {
+                width: 70px;
+                height: 70px;
+                border-radius: 70px;
+            }
+        }
+        li.name {
+            font-family: @sansFontFamily;
+            font-size: .9rem;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            a {
+                color: @linkColor;
+            }
+            a:hover {
+                color: @linkColorHover;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 @media (min-width: 768px) {
     .sidebar-fixed {
         position:fixed;
@@ -227,7 +260,6 @@ Custom Less and other Style Libraries
     >li:last-child .article {
         padding-bottom: 0
     }
-    margin-top: 6rem;
 }
 
 @media (max-width: 480px) {
