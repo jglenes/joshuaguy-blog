@@ -30,6 +30,31 @@ Custom Less and other Style Libraries
     }
 }
 
+/* ---------- Mobile Header ---------- */
+
+.mobile-header {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    padding: 1rem 4.5rem 1rem 4.5rem;
+    background-color: @white;
+    border-bottom: 1px solid @grayLighter;
+    > ul {
+        li {
+            img {
+                width: 70px;
+                height: 70px;
+                border-radius: 70px;
+            }
+        }
+        li.name {
+            font-family: @sansFontFamily;
+            font-size: .9rem;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
 @media (min-width: 768px) {
     .sidebar-fixed {
         position:fixed;
