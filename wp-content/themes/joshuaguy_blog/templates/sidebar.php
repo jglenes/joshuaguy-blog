@@ -9,7 +9,7 @@
         <ul class="sidebar-social-bar">
            <li><a rel="author" href="https://plus.google.com/113837015920431690156?rel=author"><i class="icon-large icon-google-plus-sign"></i></a></li>
            <li><a href="http://github.com/jglenes"><i class="icon-large icon-github"></a></i></li>
-           <li><a href=""><i class="icon-large icon-envelope"></a></i></li>
+           <li><a href=""><i class="icon-large icon-envelope-alt"></a></i></li>
        </ul> <!-- /.sidebar-social-bar-->
     </div> <!-- /.sidebar-contact -->
 </div> <!-- /.sidebar sidebar-fixed -->
